@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 
 @Configuration
 // 패키지명
-@MapperScan(value = "boot.camp.boot_study", sqlSessionFactoryRef = "SqlSessionFactory")
+@MapperScan(value = "ten_steps.login", sqlSessionFactoryRef = "SqlSessionFactory")
 public class
 MyBatisConfig {
 

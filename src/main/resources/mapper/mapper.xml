@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="boot.camp.boot_study.mapper.UserMapper">
+<mapper namespace="ten_steps.login.mapper.UserMapper">
 
     <select id="findAll" resultType="HashMap">
         select * from test_user
+    </select>
+    <select id="findOne" resultType="HashMap">
+        select * from test_user where
     </select>
 
 </mapper>
