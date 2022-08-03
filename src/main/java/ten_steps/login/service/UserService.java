@@ -16,4 +16,8 @@ public class UserService {
     public ArrayList<HashMap<String, Object>> findAll() {
         return userMapper.findAll();
     }
+
+    public ArrayList<HashMap<String, Object>> findOne() {
+        return userMapper.findOne();
+    }
 }

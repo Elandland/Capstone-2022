@@ -11,4 +11,5 @@ import java.util.HashMap;
 public interface UserMapper {
 
     ArrayList<HashMap<String, Object>> findAll();
+    ArrayList<HashMap<String, Object>> findOne();
 }

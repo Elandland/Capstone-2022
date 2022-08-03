@@ -6,7 +6,7 @@
         select * from test_user
     </select>
     <select id="findOne" resultType="HashMap">
-        select * from test_user where
+        select * from test_user where sid = #{sid}
     </select>
 
 </mapper>

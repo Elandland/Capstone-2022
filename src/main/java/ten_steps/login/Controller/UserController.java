@@ -19,9 +19,18 @@ public class UserController {
     @RequestMapping(value = "findAll", method = RequestMethod.POST)
     public ResponseEntity<?> findAll() {
         ResponseDTO responseDTO = new ResponseDTO();
-        responseDTO.setResultCode("complete1");
+        responseDTO.setResultCode("completeAll");
         responseDTO.setRes(userService.findAll());
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "findOne", method  = RequestMethod.POST)
+    public ResponseEntity<?> findOne(){
+        ResponseDTO responseDTO = new ResponseDTO();
+        responseDTO.setResultCode("completeOne");
+        responseDTO.setRes(userService.findOne());
+        return new ResponseEntity<>(responseDTO, HttpStatus.OK);
+
     }
 }
 
