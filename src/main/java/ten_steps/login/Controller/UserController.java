@@ -1,5 +1,6 @@
 package ten_steps.login.Controller;
 
+import org.springframework.web.bind.annotation.PostMapping;
 import ten_steps.login.dto.ResponseDTO;
 import ten_steps.login.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,11 +13,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/api/tensteps/")
 public class UserController {
-
     @Autowired
     UserService userService;
 
-    @RequestMapping(value = "findAll", method = RequestMethod.POST)
+  /*  @PostMapping("/signup")
+    public ResponseEntity<?> signup(){
+        ;
+    }
+*/
+
+    @PostMapping( "findAll")
     public ResponseEntity<?> findAll() {
         ResponseDTO responseDTO = new ResponseDTO();
         responseDTO.setResultCode("completeAll");
@@ -24,7 +30,9 @@ public class UserController {
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "findOne", method  = RequestMethod.POST)
+
+
+    @PostMapping("findOne")
     public ResponseEntity<?> findOne(){
         ResponseDTO responseDTO = new ResponseDTO();
         responseDTO.setResultCode("completeOne");

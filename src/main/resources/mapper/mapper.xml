@@ -5,8 +5,9 @@
     <select id="findAll" resultType="HashMap">
         select * from test_user
     </select>
-    <select id="findOne" resultType="HashMap">
-        select * from test_user where sid = #{sid}
+    <select id="findOne" parameterType="int" resultType="HashMap">
+        select * from test_user where user_sid = #{sid}
     </select>
+
 
 </mapper>
