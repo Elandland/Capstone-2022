@@ -81,6 +81,8 @@ public class Match {
         //cnt.Match[]해서 7이상 이면 진동 (vibrate)
     }
 
+    public void blacklist();
+
 }
 
 

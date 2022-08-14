@@ -4,12 +4,9 @@ public class GPSMatch {
 
 
     if(일정 거리에 가까워지면)
-            (차단 알고리즘);
-        if(차단하지않은 유저일 경우){
             Match_like();
-
-            GPS출력 해주고, 알고리즘 돌리기 (현지가 만들어 놓은거);
-        }
+            /*
+            blacklist도 해야되는데 나중에
 
 
         (차단 알고리즘){
@@ -23,6 +20,10 @@ public class GPSMatch {
         로그인과 동시에 User_blackList를 서버에서 가져와서 클라이언트에 저장
 
         User_blackList에 있는 ID와 거리가 가까워진 사람의 ID가 같으면 매칭 함수 작동 x
+             */
+            GPS출력 해주고, 알고리즘 돌리기 (현지가 만들어 놓은거);
+        }
+
 
     }
 
